@@ -4,10 +4,10 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>reveal.js</title>
+		<title>Scholarly Communication</title>
 
 		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/black.css">
+		<link rel="stylesheet" href="css/theme/league.css">
 
 		<!-- Theme used for syntax highlighting of code -->
 		<link rel="stylesheet" href="lib/css/zenburn.css">
@@ -24,8 +24,87 @@
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
+				<section>
+				<h2>Four trends in how academic libraries are addressing scholarly communication</h2>
+			</br>
+				<p>Jeffrey Sabol</p>
+				<p>Slides @ csudh.jeffreystephensabol.org</p>
+			</section>
+				<!--begin section-->
+				<section></br><h2>Institutional Repositories</h2>
+					<section></br></br><h3>Trends, advantages and concerns</h3></br></br></section>
+					<section></br></br></br><h4>In 2014 there were over 3000 Institutional Repositories</h4>
+					<img src="repository.png" alt= "map of IR"></section>
+					<section></br></br><h3>Advantages:</h3>
+					<p>Opens up the research output of the university to the world.</p>
+					<p>Enables and encourages iinterdisciplinary approaches to research.</p>
+					<p>Facilitates the development and sharing of digital teaching materials and aids.</p></section>
+					<section></br></br><h3>Concerns:</h3>
+					<p>Findability</p>
+					<p>Faculty's participation</p>
+					<p>Institutional support</p>
+				</section>
+				</section>
+				<!--end section-->
+				<!--begin section 2-->
+				<section></br><h2>Digital Humanities Projects:</h2>
+					<section></br></br><h3><a href="http://scalar.usc.edu/scalar/" target="_blank">Scalar</a></h3>
+					<p>Born-digital, open source, media-rich scholarly publishing that's as easy as blogging.</p></section>
+					<section></br></br><h3>Examples:</h3>
+					<h4><a href="http://freedomsring.stanford.edu/?view=Speech" target="_blank">Freedom's Ring</a> created at Stanford</h4>
+					<h4><a href="http://knottedline.com/" target="_blank">The Knotted Line</a> produced by Radical Imagination</h4>
+					</section>
+					<section></br></br><h3>Additional Projects:</h3>
+					<h4><a href="http://digitalaugustanrome.org/map/#/rome/filter:0/records/read/12/" target="_blank">Digital Augustan Rome</a> created at UNC</h4>
+					<h4><a href="http://digital2.library.ucla.edu/viewItem.do?ark=21198/zz002h27qf" target="_blank">Mapping Literary L.A.</a> created at UCLA</h4>
+					</section>
+				</section>
+				<!--end section 2-->
+				<!--begin section 3-->
+				<section></br><h2>Open Access Journals</h2>
+					<section></br></br><h3>Strengths and Weaknesses</h3></section>
+					<section></br></br><h3>Strengths:</h3>
+					<p>Allows access to the Journal regardless of citizenship, geography or institutional affiliation.</p>
+					<p>Most reputable OA journals are built on a sustainable model to insure continued publication.</p>
+					<p>Reach a larger audience then even the most prestigious journals.</p>
+					<p>Puts in to practice the principles of a public university, namely the academic scholarship is a public good.</p></section>
+					<section></br></br><h3>Weaknesses:</h3>
+					<p>Does not have the exclusivity of most high impact journals</p>
+					<p>Article Processing Fees</p>
+					<p>Promotion and Tenure not aligned with OA journals</p>
+				</section>
+				</section>
+				<!--end section 3-->
+				<!--begin section 4-->
+				<section></br><h2>Libraries as publishers</h2>
+					<section></br></br><h3>Publishing Scholarship and Textbooks</h3></br></br></section>
+					<section></br></br></br><h4>Publishing Scholarship:</h4>
+						<p>Library publisher mission:</p>
+						<p><a href="https://www.publishing.umich.edu/" target="_blank">University of Michigan</a></p>
+					<img src="ump.png" alt= "university of michigan publishing"></section>
+					<section></br></br></br><h4>Publishing Scholarship:</h4>
+						<p>For profit publisher mission:</p>
+						<p><a href="https://www.elsevier.com/about/company-information/policies" target="_blank">RELX Group (Elsevier)</a></p>
+					<img src="el.png" alt= "Elsevier" width="680" height="470"></section>
+					<section></br></br><h3>Publishing Textbooks</h3>
+						<p>Significatly lower cost than for profit publishers</p>
+						<p>Mostly open source, allowing for greater access to information.</p></section>
+					<section></br></br><h3>Current Open Access Library Publishers:</h3>
+						<p><a href="https://library.stanford.edu/news/publishing" target="_blank">Stanford University Libraries</a></p>
+						<p><a href="https://openstax.org/subjects" target="_blank">Rice University</a></p>
+						<p><a href="http://www.theatlantic.com/technology/archive/2012/09/california-takes-a-big-step-forward-free-digital-open-source-textbooks/263047/#.UGtWqIHj_Mg.gmail" target="_blank">University of California</a></p>
+						<p><a href="http://www.cdlib.org/services/access_publishing/publishing/" target="_blank">California Digital Library</a></p>
+						<p><a href="https://www.lib.umn.edu/publishing" target="_blank">The University of Minnesota Libraries</a></p>
+				</section>
+				</section>
+				<!--end section 4-->
+				<!--begin section 5-->
+				<section><h2>Questions?</h2>
+				</br>
+					<p>Jeffrey Sabol</p>
+					<p>Slides @ csudh.jeffreystephensabol.org</p>
+				</section>
+
 			</div>
 		</div>
 
@@ -37,8 +116,17 @@
 			Reveal.initialize({
 				history: true,
 
+				pubnubRemoteControl: {
+				subscribeKey: 'sub-c-58a97daa-d77f-11e6-978a-02ee2ddab7fe',    // PubNub subscribe key,
+				publishKey: 'pub-c-ede1f72e-78e4-4e5c-814b-14a00b1922cb',      // PubNub publish key
+				inputChannel: 'input',
+				outputChannel: 'output',
+				},
+
 				// More info https://github.com/hakimel/reveal.js#dependencies
 				dependencies: [
+					{ src: 'https://cdn.pubnub.com/pubnub-3.16.4.min.js', async: true },
+					{ src: 'plugin/pubnub-remote-control.js', async: true },
 					{ src: 'plugin/markdown/marked.js' },
 					{ src: 'plugin/markdown/markdown.js' },
 					{ src: 'plugin/notes/notes.js', async: true },

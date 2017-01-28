@@ -4,7 +4,7 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>Scholarly Communication</title>
+		<title>Scholarly Communications</title>
 
 		<link rel="stylesheet" href="css/reveal.css">
 		<link rel="stylesheet" href="css/theme/league.css">
@@ -24,7 +24,6 @@
 	<body>
 		<div class="reveal">
 			<div class="slides">
-<<<<<<< HEAD
 				<section>
 				<h2>Four trends in how academic libraries are addressing scholarly communication</h2>
 			</br>
@@ -41,7 +40,7 @@
 					<p>Enables and encourages iinterdisciplinary approaches to research.</p>
 					<p>Facilitates the development and sharing of digital teaching materials and aids.</p></section>
 					<section></br></br><h3>Concerns:</h3>
-					<p>Findability</p>
+					<p>Discoverability</p>
 					<p>Faculty's participation</p>
 					<p>Institutional support</p>
 				</section>
@@ -67,11 +66,11 @@
 					<section></br></br><h3>Strengths:</h3>
 					<p>Allows access to the Journal regardless of citizenship, geography or institutional affiliation.</p>
 					<p>Most reputable OA journals are built on a sustainable model to insure continued publication.</p>
-					<p>Reach a larger audience then even the most prestigious journals.</p>
-					<p>Puts in to practice the principles of a public university, namely the academic scholarship is a public good.</p></section>
+					<p>Reach a <a href="http://www.createchange.org/modes/researchers.shtml" target="_blank">larger audience</a> then even the most prestigious journals.</p>
+					<p>Puts into practice the principles of a public university, namely that academic scholarship is a public good.</p></section>
 					<section></br></br><h3>Weaknesses:</h3>
 					<p>Does not have the exclusivity of most high impact journals</p>
-					<p>Article Processing Fees</p>
+					<p><a href="https://openaccess.ku.edu/envisioning-world-beyond-apcsbpcs-symposium" target="_blank">APC - article processing charges</a></p>
 					<p>Promotion and Tenure not aligned with OA journals</p>
 				</section>
 				</section>
@@ -91,7 +90,6 @@
 						<p>Significatly lower cost than for profit publishers</p>
 						<p>Mostly open source, allowing for greater access to information.</p></section>
 					<section></br></br><h3>Current Open Access Library Publishers:</h3>
-						<p><a href="https://library.stanford.edu/news/publishing" target="_blank">Stanford University Libraries</a></p>
 						<p><a href="https://openstax.org/subjects" target="_blank">Rice University</a></p>
 						<p><a href="http://www.theatlantic.com/technology/archive/2012/09/california-takes-a-big-step-forward-free-digital-open-source-textbooks/263047/#.UGtWqIHj_Mg.gmail" target="_blank">University of California</a></p>
 						<p><a href="http://www.cdlib.org/services/access_publishing/publishing/" target="_blank">California Digital Library</a></p>
@@ -105,11 +103,6 @@
 					<p>Jeffrey Sabol</p>
 					<p>Slides @ csudh.jeffreystephensabol.org</p>
 				</section>
-
-=======
-				<section>Slide 1</section>
-				<section>Slide 2222222222222222222</section>
->>>>>>> 443752a9df1892a15a423b1a8702aa1a20428642
 			</div>
 		</div>
 
@@ -122,21 +115,23 @@
 				history: true,
 
 				pubnubRemoteControl: {
-				subscribeKey: 'sub-c-58a97daa-d77f-11e6-978a-02ee2ddab7fe',    // PubNub subscribe key,
-				publishKey: 'pub-c-ede1f72e-78e4-4e5c-814b-14a00b1922cb',      // PubNub publish key
-				inputChannel: 'input',
-				outputChannel: 'output',
-				},
+        subscribeKey: 'sub-c-58a97daa-d77f-11e6-978a-02ee2ddab7fe',   // PubNub subscribe key
+        publishKey: 'pub-c-ede1f72e-78e4-4e5c-814b-14a00b1922cb',       // PubNub publish key
+        inputChannel: 'input',                  // the channel used to receive remote commands
+        outputChannel: 'output',                // the channel used to update presentation status
+    },
 
 				// More info https://github.com/hakimel/reveal.js#dependencies
 				dependencies: [
 					{ src: 'https://cdn.pubnub.com/pubnub-3.16.4.min.js', async: true },
-					{ src: 'plugin/pubnub-remote-control.js', async: true },
+					{ src: 'plugin/pubnub-remote-control/pubnub-remote-control.js', async: true },
 					{ src: 'plugin/markdown/marked.js' },
 					{ src: 'plugin/markdown/markdown.js' },
 					{ src: 'plugin/notes/notes.js', async: true },
 					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
 				]
+
+				
 			});
 		</script>
 	</body>

@@ -18,7 +18,7 @@
             inputChannel: 'input',
             outputChannel: 'output'
         };
-cr
+
         var thiz = function (customProperties) {
 
             var options = {};
